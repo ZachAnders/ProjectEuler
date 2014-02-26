@@ -3,9 +3,10 @@
 from factor import get_factors
 
 primes_found = 0
+prime_to_get = 10001
 current_prime = 1
 
-while primes_found < 10000:
+while primes_found < prime_to_get-2:
 	current_prime += 1
 	if len(get_factors(current_prime)) == 1:
 		primes_found += 1
