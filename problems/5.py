@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env pypy
 import math
 
 counter = 0

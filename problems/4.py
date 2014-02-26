@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env pypy
 
 def is_palin(aStr):
 	tmp = list(aStr)

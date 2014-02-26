@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env pypy
 
 a,b,acc = 1,1, []
 
