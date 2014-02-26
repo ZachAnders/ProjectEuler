@@ -7,7 +7,7 @@ def get_factors(val):
 	factors = [(1, val)]
 	if not val%2:
 		factors.append((2, val/2))
-	for test_factor in xrange(3, int(math.ceil(math.sqrt(val))), 2):
+	for test_factor in xrange(3, int(math.ceil(math.sqrt(val)))+2, 2):
 		if val % test_factor == 0:
 			factors.append((test_factor, val/test_factor))
 	return factors
