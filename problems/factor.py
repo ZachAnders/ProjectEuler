@@ -2,13 +2,12 @@
 
 import math, pickle, os, sys, gzip
 test_ranges = [(2, 10000), (40000, 41000), (2000, 5000), (800000, 810000), (10000, 25000)]
-#Notes to self. 1 returns an empty array. I really don't want to waste a cmp for everytime I try to
-#factor something though 
+
 def get_factors(val):
-	factors = []
+	factors = [(1, val)]
 	if not val%2:
 		factors.append((2, val/2))
-	for test_factor in xrange(1, int(math.ceil(math.sqrt(val))), 2):
+	for test_factor in xrange(3, int(math.ceil(math.sqrt(val))), 2):
 		if val % test_factor == 0:
 			factors.append((test_factor, val/test_factor))
 	return factors
