@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Illegal number of parameters"
+	exit
+fi
+
+cp ../template.py ./$1.py
