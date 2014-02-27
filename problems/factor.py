@@ -5,6 +5,8 @@ test_ranges = [(2, 10000), (40000, 41000), (2000, 5000), (800000, 810000), (1000
 
 def get_factors(val):
 	factors = [(1, val)]
+	if val < 4:
+		return factors
 	if not val%2:
 		factors.append((2, val/2))
 	for test_factor in xrange(3, int(math.ceil(math.sqrt(val)))+2, 2):
